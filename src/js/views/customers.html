@@ -1,0 +1,53 @@
+<!--
+ Copyright (c) 2014, 2018, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding">
+  <h1>Mangement student</h1>
+  <div>
+          <table border="0">
+	  <tr>
+	     <td> <oj-label for="text-input">ID </oj-label> </td>
+        <td>  <oj-input-text id="text-input" value="{{value}}"></oj-input-text></td>
+	   </tr>
+	   <tr>
+          <td><oj-label for="text-input">Student Name </oj-label></td>
+         <td> <oj-input-text id="text-input" value="{{value1}}"></oj-input-text></td>
+		  </tr>
+		  <tr>
+		 <td> <oj-label for="text-input">Mobile Number </oj-label></td>
+        <td>  <oj-input-text id="text-input" value="{{value2}}"></oj-input-text></td>
+		  </tr>
+		  
+		  
+		  <tr>
+		  <td> </td>
+		  <td>  <oj-button id='button1' on-oj-action='[[buttonClick1]]'>Add Student</oj-button>
+		   <oj-button id='button1' on-oj-action='[[buttonClick3]]'>Update Student</oj-button>
+		      </td>
+		  </tr>
+		  
+		  <tr>
+		  <td><oj-button id='button1' on-oj-action='[[buttonClick]]'>Remove Student</oj-button></td>
+		   <td><oj-input-text id="text-input" value="{{value7}}"></oj-input-text> </td>
+		   
+		  </tr>
+		  
+		  </table>
+		  <div  id="viewdata">
+              <oj-table id="table" aria-label="Departments Table"
+                                        data='[[dataprovider]]'
+                                        display='grid'
+                                        columns-default='{"sortable": "enabled"}' 
+                                        columns='[{"headerText": "Student Id", 
+                                                   "field": "Studentid"},
+                                                  {"headerText": "Student Name", 
+                                                   "field": "Studentname"},
+                                                  {"headerText": "Mobile Number", 
+                                                   "field": "mobilenumber"}]'>
+                </oj-table>
+ 
+		 </div>
+	 
+  </div>
+</div>

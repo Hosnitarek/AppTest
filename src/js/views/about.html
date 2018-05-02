@@ -1,0 +1,103 @@
+<!--
+ Copyright (c) 2014, 2018, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding">
+  <h1>assign student with course </h1>
+  <div>
+   <table>
+   
+     <!-- <tr> 
+      <td> <oj-label for="combobox">ID</oj-label> </td>
+      <td>
+	  <oj-combobox-one id="combobox" value="{{val}}" style="max-width:20em">
+	       <oj-option value="1">1</oj-option>
+            <oj-option value="2">2</oj-option>
+            <oj-option value="3">3</oj-option>
+            <oj-option value="4">4</oj-option>
+            <oj-option value="5">5</oj-option>
+	  </oj-combobox-one>
+	  </td>  
+ </tr>
+   
+   
+  <tr> 
+      <td> <oj-label for="combobox">Student Name</oj-label> </td>
+      <td>
+	  <oj-combobox-one id="combobox" value="{{val1}}" style="max-width:20em">
+	       <oj-option value="Internet Explorer">Internet Explorer</oj-option>
+            <oj-option value="Firefox">Firefox</oj-option>
+            <oj-option value="Chrome">Chrome</oj-option>
+            <oj-option value="Opera">Opera</oj-option>
+            <oj-option value="Safari">Safari</oj-option>
+	  
+	  </oj-combobox-one>
+	  </td>  
+ </tr>
+
+ <tr> 
+      <td><oj-label for="combobox">Course Name</oj-label></td>
+      <td>
+	  <oj-combobox-one id="combobox" value="{{val2}}" style="max-width:20em">
+	     <oj-option value="hosni"> hosni</oj-option>
+            <oj-option value="tarek">tarek</oj-option>
+            <oj-option value="ali">ali</oj-option>
+            <oj-option value="nader">nader</oj-option>
+            <oj-option value="mostafa">mostafa</oj-option>
+
+	  </oj-combobox-one>
+	  </td> 
+ </tr> -->
+<tr>
+
+<td> <oj-label for="combobox">Course Name</oj-label> </td>
+
+<td> <oj-input-text id="text-input" value="{{value}}"></oj-input-text>  </td>
+</tr>
+ 
+ 
+ <tr>
+  <td>    <oj-label for="combobox">Course Name</oj-label>  </td>
+      <td>   
+	    <form >
+	    <oj-combobox-one id="combobox" style="max-width:20em" options="[[data]]"  on-value-changed="[[valueChangeHandler]]">
+           
+          </oj-combobox-one>
+		   <div id="changelog" style="color:blue"></div>
+		   <div id="changelog" style="color:blue"></div>
+       </form>
+	 
+	 </td>
+ </tr>
+
+ 
+  <tr>
+  <td>    <oj-label for="combobox">Course Name</oj-label>  </td>
+      <td>   
+	    <form >
+	    <oj-combobox-one id="combobox" style="max-width:20em" options="[[datastudent]]"  on-value-changed="[[valueChangeHandler1]]">
+           
+          </oj-combobox-one>
+       </form>
+	 
+	 </td>
+ </tr>
+ 
+ 
+ 
+ 
+ <tr>
+ <td></td>
+ <td>
+ <oj-button id='button1' on-oj-action='[[buttonClick]]'>Add Student</oj-button>
+ </td>
+ </tr>
+ 
+  <!-- <span id="curr-value" data-bind="text: val"></span>
+  </br>
+   <span id="curr-value" data-bind="text: val1"></span>
+   </br>
+    <span id="curr-value" data-bind="text: val2"></span> -->
+   </table>
+  </div>
+</div>
